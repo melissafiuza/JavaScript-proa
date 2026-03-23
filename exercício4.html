@@ -10,11 +10,11 @@
         let ipi = Number(prompt("Digite a porcentagem do IPI:"));
 
 let codigo1 = prompt("Digite o código da peça 1: ");
-let valor1 = Number(prompt("Digite o valor unitário da peça 1:"));
+let valor1 = parseFloat(prompt("Digite o valor unitário da peça 1:"));
 let quant1 = Number(prompt("Digite a quantidade da peça 1:"));
 
 let codigo2 = prompt("Digite o código da peça 2: ");
-let valor2 = Number(prompt("Digite o valor unitário da peça 2:"));
+let valor2 = parseFloat(prompt("Digite o valor unitário da peça 2:"));
 let quant2 = Number(prompt("Digite a quantidade da peça 2:"));
 
 let total = (valor1 * quant1 + valor2 * quant2) * (ipi / 100 + 1);
