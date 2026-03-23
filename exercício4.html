@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4 js</title>
+</head>
+<body>
+    <script>
+        let ipi = Number(prompt("Digite a porcentagem do IPI:"));
+
+let codigo1 = prompt("Digite o código da peça 1:");
+let valor1 = Number(prompt("Digite o valor unitário da peça 1:"));
+let quant1 = Number(prompt("Digite a quantidade da peça 1:"));
+
+let codigo2 = prompt("Digite o código da peça 2:");
+let valor2 = Number(prompt("Digite o valor unitário da peça 2:"));
+let quant2 = Number(prompt("Digite a quantidade da peça 2:"));
+
+let total = (valor1 * quant1 + valor2 * quant2) * (ipi / 100 + 1);
+
+document.write("Código peça 1: ", codigo1);
+document.write("<br/>Código peça 2: ", codigo2);
+document.write("<br/>Valor total a pagar: R$", total);
+    </script>
+</body>
+</html>
