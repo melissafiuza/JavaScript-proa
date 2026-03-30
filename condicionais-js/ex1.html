@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <script>
+        let prato = parseInt(prompt("Digite o número do prato (1- vegetariano, 2- peixe, 3- frango, 4- carne): "))
+        let sobremesa = parseInt(prompt("Digite o número da sobremesa (1- abacaxi, 2- sorvete diet, 3- mouse diet, 4- mouse chocolate): "))
+        let bebida = parseInt(prompt("Digite o número da bebida (1- chá, 2- suco laranja, 3- suco melão, 4- refrigerante diet): "))
+        let caloriasp
+        let caloriass
+        let caloriasb
+
+        switch (prato){
+            case 1: caloriasp = 180; break
+            case 2: caloriasp = 230; break
+            case 3: caloriasp = 250; break
+            case 4: caloriasp = 350; break
+            default: (document.write("Prato inexistente"))
+        }
+        switch (sobremesa){
+            case 1: caloriass = 75; break
+            case 2: caloriass = 110; break
+            case 3: caloriass = 170; break
+            case 4: caloriass = 200; break
+            default: (document.write("Sobremesa inexistente"))
+        }
+        switch (bebida){
+            case 1: caloriasb = 20; break
+            case 2: caloriasb = 70; break
+            case 3: caloriasb = 100; break
+            case 4: caloriasb = 65; break
+             default: (document.write("Bebida inexistente"))
+        }
+         let totalCalorias = caloriasp+caloriasb+caloriass
+         alert("Total de calorias = " + totalCalorias + "cal")
+        
+    </script>
+</body>
+</html>
