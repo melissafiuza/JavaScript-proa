@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <script>
+        let saldo = parseFloat(prompt("Digite seu saldo médio: "))
+        let credito
+        if (saldo <=500){
+            credito = 0
+        } else if (saldo<=1000){
+            credito = saldo * 0.3
+        } else if (saldo <= 3000){
+            credito = saldo * 0.4
+        } else {
+            credito = saldo * 0.5
+        }
+        alert("Saldo médio: " + saldo)
+        alert("Valor do crédito: " + credito)
+    </script>
+</body>
+</html>
